@@ -41,7 +41,7 @@
 				<h1 class="site-name"><a href="/" title="Xinlongj’s Home">Xinlongj’s Home</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜單">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -54,7 +54,7 @@
 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:yoursite.com">
 					</form>
 					
@@ -78,7 +78,7 @@
     </p>
   <p class="article-time">
     <time datetime="2017-07-20T08:25:16.000Z" itemprop="datePublished">2017-07-20</time>
-    Updated:<time datetime="2017-07-20T09:41:30.000Z" itemprop="dateModified">2017-07-20</time>
+    更新日期:<time datetime="2017-07-20T14:07:59.000Z" itemprop="dateModified">2017-07-20</time>
     
   </p>
 </header>
@@ -86,7 +86,7 @@
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目錄</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-创建Github新账户"><span class="toc-number">1.</span> <span class="toc-text">1.创建Github新账户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-ssh身份验证相关"><span class="toc-number">2.</span> <span class="toc-text">2.ssh身份验证相关</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-win平台下："><span class="toc-number">2.0.1.</span> <span class="toc-text">2.1 win平台下：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-mac平台下："><span class="toc-number">2.0.2.</span> <span class="toc-text">2.2 mac平台下：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-新建仓库"><span class="toc-number">3.</span> <span class="toc-text">3.新建仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-备份代码"><span class="toc-number">4.</span> <span class="toc-text">4.备份代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第八步-将本地代码上传至github"><span class="toc-number">4.1.</span> <span class="toc-text">第八步:将本地代码上传至github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第九步-下面说说更新代码的操作吧"><span class="toc-number">4.2.</span> <span class="toc-text">第九步:下面说说更新代码的操作吧</span></a></li></ol></li></ol>
 		</div>
 		
@@ -106,7 +106,15 @@
 <p><strong>第四步：</strong></p>
 <p>在github上添加ssh密钥，打开aaa.pub，复制全文。<a href="https://github.com/settings/ssh，Add" target="_blank" rel="external">https://github.com/settings/ssh，Add</a> SSH key，粘贴进去</p>
 <h2 id="3-新建仓库"><a href="#3-新建仓库" class="headerlink" title="3.新建仓库"></a>3.新建仓库</h2><p>第三步：填写名称，简介（可选），勾选Initialize this repository with a README选项，这是自动创建REAMDE.md文件，省的你再创建。</p>
-<h2 id="4-备份代码"><a href="#4-备份代码" class="headerlink" title="4.备份代码"></a>4.备份代码</h2><p><strong>第一步：</strong>clone刚才新建的repository 到本地<br>cd进入到一个存放代码的文件夹，我的是在documents/MyCode2Github<br>输入命令：<br>git clone <a href="https://github.com/Flowerowl/stumansys.git" target="_blank" rel="external">https://github.com/Flowerowl/stumansys.git</a><br><img src="https://github.com/xinlongj/xinlongj.github.io/blob/master/2017/07/20/%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81%E4%B8%8A%E4%BC%A0%E8%87%B3github%E5%A4%87%E4%BB%BD%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/git_clone.png" alt=""><br>此时，会在MyCode2Github文件夹下产生一个文件夹</p>
+<h2 id="4-备份代码"><a href="#4-备份代码" class="headerlink" title="4.备份代码"></a>4.备份代码</h2><p><strong>以下代码以将本地的“IMU”文件夹下的代码备份到github上为例：</strong></p>
+<p><strong>第一步：</strong>建立git仓库<br>cd到你的本地项目根目录下(例如我的所有代码都放在documents/MyCode2Github/IMU)，执行git命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git init</div></pre></td></tr></table></figure>
+<p><strong>第二步：</strong>将项目的所有文件添加到仓库中(注意，下面的add后面有一个空格，然后才是”.”)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add .</div></pre></td></tr></table></figure>
+<p>1<br>1<br>如果想添加某个特定的文件，只需把.换成特定的文件名即可</p>
+<p>第三步：将add的文件commit到仓库</p>
+<p>git commit -m “注释语句”<br>1<br>1</p>
+<p><strong>第一步：</strong>clone刚才新建的repository 到本地<br>cd进入到一个存放代码的文件夹，我的是在documents/MyCode2Github<br>输入命令：<br>git clone <a href="https://github.com/Flowerowl/stumansys.git" target="_blank" rel="external">https://github.com/Flowerowl/stumansys.git</a><br><img src="https://github.com/xinlongj/xinlongj.github.io/blob/master/2017/07/20/%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81%E4%B8%8A%E4%BC%A0%E8%87%B3github%E5%A4%87%E4%BB%BD%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95/git_clone.png" alt=""><br>此时，会在MyCode2Github文件夹下产生一个文件夹</p>
 <p><strong>第二步：</strong>把代码放在</p>
 <h3 id="第八步-将本地代码上传至github"><a href="#第八步-将本地代码上传至github" class="headerlink" title="第八步:将本地代码上传至github"></a>第八步:将本地代码上传至github</h3><p>先说首次使用 意思就是这个文件夹中的代码你还没有向GITHUB提交过代码（上传代码的文件夹名应该与github上的repository 名称一样。）</p>
 <p>（1）cd /home/test(假如 test就是你的用户名)/githubtest(这是个文件夹,你可以提前先建立好,这个文件夹也可以是你要提交代码的项目文件夹)</p>
@@ -154,20 +162,20 @@
 
 	
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目錄</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-创建Github新账户"><span class="toc-number">1.</span> <span class="toc-text">1.创建Github新账户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-ssh身份验证相关"><span class="toc-number">2.</span> <span class="toc-text">2.ssh身份验证相关</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-win平台下："><span class="toc-number">2.0.1.</span> <span class="toc-text">2.1 win平台下：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-mac平台下："><span class="toc-number">2.0.2.</span> <span class="toc-text">2.2 mac平台下：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-新建仓库"><span class="toc-number">3.</span> <span class="toc-text">3.新建仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-备份代码"><span class="toc-number">4.</span> <span class="toc-text">4.备份代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#第八步-将本地代码上传至github"><span class="toc-number">4.1.</span> <span class="toc-text">第八步:将本地代码上传至github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第九步-下面说说更新代码的操作吧"><span class="toc-number">4.2.</span> <span class="toc-text">第九步:下面说说更新代码的操作吧</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">分類</p>
 		<ul>
 		
 			<li><a href="/categories/随笔/" title="随笔">随笔<sup>1</sup></a></li>
@@ -178,7 +186,7 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">標簽</p>
 		<ul class="clearfix">
 		
 			<li><a href="/tags/F1/" title="F1">F1<sup>1</sup></a></li>
@@ -188,7 +196,7 @@
 
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
+	<a href="null" target="_blank" title="rss">RSS 訂閱</a>
 </div>
 
 </aside>
