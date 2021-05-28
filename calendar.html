@@ -94,14 +94,21 @@
   document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      displayEventTime: false,
+      displayEventTime: true,
       buttonIcons: true,
       initialDate: new Date(year, month, date),
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
-        right: ''
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
       },
+      buttonText: {
+        today: '今天',
+        month: '月',
+        week: '周',
+        day: '日',
+        list:'列表'
+    },
       editable: true,
       selectable: true,
       businessHours: true,
