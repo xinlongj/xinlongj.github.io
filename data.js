@@ -20,12 +20,7 @@ const data = [
         title: 'Available',
         start: '2021-06-04T9:30:00',
         end: '2021-06-04T17:30:00'
-    },
-    {
-        title: 'Available',
-        start: '2021-06-05T9:30:00',
-        end: '2021-06-05T17:30:00'
-    },
+    }
     /* Example
     {
         title: 'Click for Google',
