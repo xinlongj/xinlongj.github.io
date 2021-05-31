@@ -20,13 +20,11 @@ const data = [
         title: 'Available',
         start: '2021-06-04T9:30:00',
         end: '2021-06-04T17:30:00'
-    }
-    /* Example
+    },
     {
         title: 'Click for Google',
         url: 'http://google.com/',
         start: '2021-05-28'
     }
-    */
 ]
 export default data
