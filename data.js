@@ -7,8 +7,8 @@ const data = [
     },
     {
         title: 'Still available now',
-        start: '2021-05-31T 13:30:00',
-        end: '2021-05-31T 16:00:00'
+        start: '2021-05-31T13:30:00',
+        end: '2021-05-31T16:00:00'
     },
     // June of 2021
     {
