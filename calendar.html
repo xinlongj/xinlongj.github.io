@@ -83,7 +83,19 @@
   </section>
   <!-- <div id='loading'>loading...</div>
   <div id='calendar'></div> -->
-  <iframe id="iframe" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=amlhbmd4aW5sb25nMjAwOUBnbWFpbC5jb20&amp;src=dWxzcDU4OXViODhub3A3YmR2NzAzazcyY2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;color=%23009688&amp;mode=WEEK&amp;showTitle=0" style="border:solid 1px #777" width="800"  frameborder="0" scrolling="no"></iframe>
+  <div class="iframebox">
+    <div class="email">
+     
+      <p>you can make an appointment with me via  
+        <a href="mailto:jiangxinlong@ict.ac.cn" target="_blank">
+          jiangxinlong@ict.ac.cn
+        </a> 
+      </p>
+    </div>
+    <iframe id="iframe" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FShanghai&amp;src=amlhbmd4aW5sb25nMjAwOUBnbWFpbC5jb20&amp;src=dWxzcDU4OXViODhub3A3YmR2NzAzazcyY2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%233F51B5&amp;color=%23009688&amp;mode=WEEK&amp;showTitle=0" style="border:solid 1px #777" width="800"  frameborder="0" scrolling="no"></iframe>
+  </div>
+  
+  
 </body>
 <script type="module">
   // import data from './data.js'
@@ -146,10 +158,24 @@
     margin: 40px auto;
     padding: 0 10px;
   }
-  #iframe{
+  
+  .iframebox{
+    margin-top:5%;
+  }
+  .iframebox .email{
+    font-weight: 700;
+    font-size: 20px;
+    /* margin-top: 5%; */
+  }
+  .email p {
+    text-indent:20px;
+  }
+  .iframebox #iframe{
     width: 100%;
     /* overflow: hidden; */
-    margin-top:5%;
+    
     /* display: inline-block; */
   }
+    
+  
 </style>
